@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var pais: UILabel!
     @IBOutlet weak var hamburguesa: UILabel!
+    @IBOutlet weak var precio: UILabel!
     
     var paises : ColeccionDePaises = ColeccionDePaises()
     var hamburguesas : ColeccionDeHamburguesas = ColeccionDeHamburguesas()
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
     @IBAction func cambiarPaisHamburguesa() {
         pais.text = "En " + paises.obtenPais()
         hamburguesa.text = "una hamburguesa " + hamburguesas.obtenHamburguesa()
+        precio.text = "por " + String(arc4random() % 50) + ".00"
     }
 
 }

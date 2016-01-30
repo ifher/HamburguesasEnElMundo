@@ -24,14 +24,20 @@
                                     <action selector="cambiarPaisHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="Geb-qO-8BM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yg-Jd-lQQ">
+                                <rect key="frame" x="246" y="198" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7h-TJ-jq1">
                                 <rect key="frame" x="284" y="144" width="32" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yg-Jd-lQQ">
-                                <rect key="frame" x="246" y="198" width="108" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txv-tK-OoN">
+                                <rect key="frame" x="276" y="250" width="49" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,7 +47,9 @@
                         <constraints>
                             <constraint firstItem="q7h-TJ-jq1" firstAttribute="top" secondItem="K6g-41-88b" secondAttribute="bottom" constant="55" id="5Fi-EB-LeW"/>
                             <constraint firstItem="3Yg-Jd-lQQ" firstAttribute="top" secondItem="q7h-TJ-jq1" secondAttribute="bottom" constant="33" id="7oX-zr-Ct5"/>
+                            <constraint firstItem="txv-tK-OoN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C8q-76-dlr"/>
                             <constraint firstItem="K6g-41-88b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ilv-ef-RoQ"/>
+                            <constraint firstItem="txv-tK-OoN" firstAttribute="top" secondItem="3Yg-Jd-lQQ" secondAttribute="bottom" constant="31" id="LC1-ue-nf4"/>
                             <constraint firstItem="3Yg-Jd-lQQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U3w-PD-Iyu"/>
                             <constraint firstItem="K6g-41-88b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="eaD-0u-Gi9"/>
                             <constraint firstItem="q7h-TJ-jq1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yFD-b2-EEK"/>
@@ -50,6 +58,7 @@
                     <connections>
                         <outlet property="hamburguesa" destination="3Yg-Jd-lQQ" id="GWX-OT-HRs"/>
                         <outlet property="pais" destination="q7h-TJ-jq1" id="o1X-rC-yoG"/>
+                        <outlet property="precio" destination="txv-tK-OoN" id="vqv-fO-5yb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
