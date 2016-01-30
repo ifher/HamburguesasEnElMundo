@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var pais: UILabel!
+    @IBOutlet weak var hamburguesa: UILabel!
+    
+    var paises : ColeccionDePaises = ColeccionDePaises()
+    var hamburguesas : ColeccionDeHamburguesas = ColeccionDeHamburguesas()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +26,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func cambiarPaisHamburguesa() {
+        pais.text = "En " + paises.obtenPais()
+        hamburguesa.text = "una hamburguesa " + hamburguesas.obtenHamburguesa()
+    }
 
 }
 
